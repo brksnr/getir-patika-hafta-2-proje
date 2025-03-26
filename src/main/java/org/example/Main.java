@@ -24,6 +24,9 @@ public class Main {
         double totalVillaPrice = villaService.getTotalPrice();
         System.out.println("Villaların toplam fiyatı: " + totalVillaPrice);
 
+        double totalApartmanetPrice = apartmentService.getTotalPrice();
+        System.out.println("Evlerin toplam fiyatı: " + totalApartmanetPrice);
+
         double totalSummerHousePrice = summerHouseService.getTotalPrice();
         System.out.println("Yazlıkların toplam fiyatı: " + totalSummerHousePrice);
 
@@ -35,6 +38,9 @@ public class Main {
 
         double averageSummerHouseSquareMeters = summerHouseService.getAverageSquareMeters();
         System.out.println("Yazlıkların ortalama metrekaresi: " + averageSummerHouseSquareMeters);
+
+        double averageApartmentsSquareMeters = apartmentService.getAverageSquareMeters();
+        System.out.println("Evlerin ortalama metrekaresi: " + averageApartmentsSquareMeters);
 
         double averageHouseSquareMeters = houseService.getAverageSquareMeters();
         System.out.println("Tüm evlerin ortalama metrekaresi: " + averageHouseSquareMeters);
